@@ -11,7 +11,7 @@ export default function Intro() {
   return (
         <Box
               id="intro" sx={{
-          pt: { xs: 4, sm: 25 },
+          pt: { xs: 4, sm: 20 },
           pb: { xs: 8, sm: 30 },
             
             bgcolor: 'hsl(28,100%,94.9%)',
@@ -31,6 +31,8 @@ export default function Intro() {
                     textAlign: { sm: 'left', md: 'center' },
                   }}
             >
+                <br/>
+                <br/>
               <Typography component="h2" variant="h3" sx={{ color: 'text.secondary' }}>
                   Springwood Capital (UK) provides AI-driven solutions for remote client identification, authorisation and fraud prevention for financial institutions and law enforcement.
               </Typography>
