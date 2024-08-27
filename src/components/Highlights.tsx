@@ -16,37 +16,36 @@ const items = [
     icon: <DocumentScannerIcon fontSize={"large"}/>,
     title: 'Document Type',
     description:
-      'AI automatically will recognise document types and providers in accordance with your policies, procedures, and local regulatory requirements.',
+      'Springwood uses for user identification a biometric, sometimes referred to as an electronic, passport or ID. A government issued document with an embedded secure chip that can be read and verified via NFC and containing MRZ (Machine Readable Zone).',
   },
   {
     icon: <CameraFrontIcon fontSize={"large"}/>,
-    title: 'Camera',
+    title: 'User DB Search',
     description:
-      'Show the passport front, the MRZ area of the ID Card, bank statement, utility bill, or a bank statement to your camera. Make a selfie with automatic liveness test.',
+      'Additionally, it is possible to extract, verify, and confirm user’s residential address in a variety of countries as well as companies where the user is a director, a shareholder, or a person with other significant control. A user can be automatically checked against a variety of databases, including sanction lists, adverse media, antifraud and other industry specific requirements.',
   },
   {
     icon: <NfcIcon fontSize={"large"}/>,
-    title: 'Use NFC',
+    title: 'Reading MRZ & NFC',
     description:
-      'The data is received by scanning NFC chip on your ID. Get biometric photo and more information with chip reading and compares with available databases and selfie.',
+      'Reading MRZ and the embedded chip using NFC, Springwood extracts personal information about the document holder along with security features that protect the integrity of the information. At the next step, a user takes selfie using special liveness test AI-driven technology.',
   },
   {
     icon: <DatasetLinkedIcon fontSize={"large"}/>,
-    title: 'Securely request and receive documents',
+    title: 'User Profile',
     description:
-      'Automated AML checks and screening against required databases, with fuzzy logic in 41 languages. AI driven keywords search in transactions and supporting documents.',
+      'Using open-source information such as Internet and social media you can build a user’s connection tree up to 7 levels as a standard and then, as an example in the financial industry, use it for building a decision-making fraud prevention tree or vector matrix.',
   },
 ];
 
 export default function Highlights() {
   return (
     <Box
-      id="highlights"
+      id="features"
       sx={{
         pt: { xs: 4, sm: 20 },
         pb: { xs: 8, sm: 20 },
-        color: 'white',
-        bgcolor: 'hsl(220, 30%, 2%)',
+          bgcolor: 'hsl(28,100%,94.9%)',
       }}
     >
       <Container
@@ -58,6 +57,9 @@ export default function Highlights() {
           gap: { xs: 3, sm: 4 },
         }}
       >
+          <Typography component="h2" variant="h3" sx={{ color: 'text.secondary' }}>
+              How the process works?
+          </Typography>
         <Grid container spacing={2.5}>
           {items.map((item, index) => (
             <Grid item xs={12} sm={6} md={3} key={index}>
@@ -73,16 +75,17 @@ export default function Highlights() {
                   border: '1px solid',
                   borderColor: 'hsla(220, 25%, 25%, .3)',
                   background: 'transparent',
-                  backgroundColor: 'grey.900',
+                  backgroundColor: 'hsl(28,100%,94.9%)',
                   boxShadow: 'none',
                 }}
               >
-                <Box sx={{ opacity: '50%'}}>{item.icon}</Box>
+                <Box>{item.icon}</Box>
                 <div>
-                  <Typography gutterBottom sx={{ fontWeight: 'medium' }}>
+                  {/*<Typography component="h2" variant="h5" gutterBottom sx={{ fontWeight: 'medium' }}>
                     {item.title}
                   </Typography>
-                  <Typography variant="body2" sx={{ color: 'grey.400' }}>
+                    <br/>*/}
+                  <Typography component="h2" variant="h6">
                     {item.description}
                   </Typography>
                 </div>

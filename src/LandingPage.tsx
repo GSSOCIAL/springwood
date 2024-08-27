@@ -101,7 +101,7 @@ export default function LandingPage() {
           <Divider />
           <Intro />
         <Divider />
-        <Features />
+        <Highlights />
         <Divider />
         <Benefits />
           <Divider />
